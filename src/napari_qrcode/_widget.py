@@ -30,6 +30,6 @@ if __name__ == "__main__":
 
     widget = qrcode_widget()
     
-    viewer.window.add_dock_widget(widget, name="Conference")
+    viewer.window.add_dock_widget(widget, name="QR-Code")
     # widget_demo.show()
 
