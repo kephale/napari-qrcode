@@ -2,20 +2,9 @@ name: napari-qrcode
 display_name: QR-Code
 contributions:
   commands:
-    - id: napari-qrcode.make_qwidget
-      python_name: napari_qrcode._widget:ExampleQWidget
-      title: Make example QWidget
-    - id: napari-qrcode.make_magic_widget
-      python_name: napari_qrcode._widget:example_magic_widget
-      title: Make example magic widget
-    - id: napari-qrcode.make_func_widget
-      python_name: napari_qrcode._widget:example_function_widget
-      title: Make example function widget
+    - id: napari-qrcode.qrcode_widget
+      python_name: napari_qrcode._widget:qrcode_widget
+      title: QR-Code
   widgets:
-    - command: napari-qrcode.make_qwidget
-      display_name: Example QWidget
-    - command: napari-qrcode.make_magic_widget
-      display_name: Example Magic Widget
-    - command: napari-qrcode.make_func_widget
-      autogenerate: true
-      display_name: Example Function Widget
+    - command: napari-qrcode.qrcode_widget
+      display_name: Generate a QR code
